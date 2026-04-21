@@ -1,5 +1,6 @@
-FROM maven:3.9-eclipse-temurin-21 AS builder
+FROM eclipse-temurin:26-jdk AS builder
 WORKDIR /app
+RUN apt-get update && apt-get install -y maven
 COPY pom.xml .
 RUN mvn -B dependency:go-offline
 
