@@ -8,7 +8,8 @@ import java.util.List;
 
 @RestController
 @RequestMapping(value = "/cats", produces = "application/json")
-@CrossOrigin(origins = "http://localhost:5173")
+//@CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://catmash-frontend.onrender.com/")
 public class CatController {
 
     private final CatService catService;

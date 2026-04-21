@@ -6,7 +6,8 @@ import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/votes", produces = "application/json")
-@CrossOrigin(origins = "http://localhost:5173")
+//CrossOrigin(origins = "http://localhost:5173")
+@CrossOrigin(origins = "https://catmash-frontend.onrender.com/")
 public class VoteController {
 
     private final VoteService voteService;
